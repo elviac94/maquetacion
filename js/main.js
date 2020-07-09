@@ -12,10 +12,10 @@ const getMenu =()=>{
 
 const showCloseIcon =()=>{
     if(toggleMenu.classList.contains('visible')){
-        imgMenu.setAttribute('src','../images/cerrar.svg')
+        imgMenu.setAttribute('src','./images/cerrar.svg')
         addOptions()
     }else{
-        imgMenu.setAttribute('src','../images/icons8-menú.svg')
+        imgMenu.setAttribute('src','./images/icon8.svg')
     }
 }
 
