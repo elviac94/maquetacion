@@ -1,0 +1,536 @@
+/*Header*/
+.header__container{
+    width: 100%;
+    background-color:#203354;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:0;
+}
+.top__main--list{
+    display:none;
+}
+
+.top__main--list > li{
+    display: block;
+    color:#ffffff ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-right: #ffffff solid ;
+    padding: 10px 15px;
+}
+
+.top__main--list >:nth-last-child(1){
+    border-right: none ;
+}
+
+.second__container{
+    width: 100%;
+    height: 80px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.second__container--title{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.second__container--title > h4{
+    width: 400px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color:#131F33;
+    text-transform: uppercase; 
+    display:none;
+}
+
+.logo__container{
+    width: 45px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.logo__container > img{
+    width: 100%;
+}
+
+.second__main{
+    width: 100%;
+    display:none;
+}
+
+.second__main--list{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.second__main--list > li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #203354;
+    text-transform: uppercase;
+}
+
+.second__main--list > :last-child{
+    background-color: #203354;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color:white;
+    align-self: center;
+}
+
+.menu__container--icon{
+    display: flex;
+    justify-content: flex-end;
+    width: 50px;
+    height: 50px;
+
+}
+
+.menu__container--icon > img{
+    width: 100%;
+}
+
+/*--------- JavaScript-----------*/
+
+.visible{
+    display: flex;
+    padding:20px;
+    width: 100%;
+    height: 325px;
+    opacity: .9;
+    background-color: #f6bc49 ;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+
+/*--------- Menú-----------*/
+
+.info__container{
+    width:100%;
+    margin-top: 90px;
+}
+
+.info__container--course{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.course--list{
+    width: 100%;
+    padding:30px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #d8eeff;
+}
+
+.course--list > :last-child{
+    color:black;
+}
+
+.university__container{
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px; 
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.university__container > p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.university__container--logo{
+    width: 100px;
+    height: 40px;
+}
+
+.university__container--logo > img{
+    width: 100%;
+}
+
+.description__container{
+    width: 100%;
+}
+
+.course__container--picture{
+    width: 100%;
+}
+
+.course__container--picture > img{
+    width: 100%;
+}
+
+.course__name{
+    padding:30px 20px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.infor__list{
+    width: 100%;
+    height: 220px;
+    padding:20px;
+    margin-bottom: 20px;
+    background-color: #d8eeff ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.infor__list > li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.infor__list > li > i{
+    color:#f6bc49;
+    margin-right: 15px;
+    width: 25px;
+}
+
+.presentation__list{
+    width: 100%;
+    height: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 5px -1px #dddddd;
+}
+
+.presentation__list > li{
+    width: 100%;
+    text-align: center;
+    border-bottom: #d8eeff solid 1px;
+    text-transform: uppercase;
+}
+
+.presentation__list > :first-child{
+    border-bottom: #f6bc49 solid 2px;
+    
+}
+
+.text__container{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.footer__container{
+    width: 100%;
+    padding: 20px;
+    height: 450px;
+    background-color: #203354 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__container--title{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #ffffff ;
+}
+
+.footer__container--title > h2{
+    margin-right: 5px;
+}
+
+.footer__container--title > .logo__container{
+    width: 45px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+
+.rrss__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rrss__container > a{
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+}
+
+.rrss__container > a > img{
+    width: 100%;
+}
+
+.footer__container > p{
+    width: 100%;
+    color: #ffffff ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.university__container--footer{
+    width: 100%;
+    color: #ffffff ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.university__container--footer > .university__container--logo{
+    width: 120px;
+    height: 60px;
+}
+
+.footer__bottom{
+    width: 100%;
+    height: 100px;
+    color: #ffffff ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border-top: #ffffff solid 1px;
+}
+
+.footer__bottom--list{
+    text-transform: none;
+}
+
+/* Tablet*/
+@media all and (min-width:768px){
+
+    .header__container{
+        z-index: 2;
+    }
+    .university__container--logo{
+        margin-left: 10px;
+    }
+
+    .description__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position:relative;
+    }
+
+    .course__container--picture > img{
+        opacity: .6;
+    }
+    .course__name{
+        position:absolute;
+        font-size: 46px;
+        top:120px;
+        left: 50px;
+        color:#ffffff;
+    }
+
+    .infor__list{
+        width: 80%;
+        background-color: #ffffff;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 51px;
+        left:calc((100% - 80%)/2);
+    }
+
+    .infor__list > li{
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
+    .infor__list > li > i{
+        margin-right: 5px;
+    }
+
+     .footer__container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    } 
+
+    .footer__container--title{
+        width: 60%;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: normal;
+        margin-right: 25px;
+    }
+    .footer__container--title > h2{
+        visibility: hidden;
+        line-height: 20px;
+    }
+    .footer__container--title > h2:before{
+        visibility: visible;
+        width: 70%;
+        font-weight: 400;
+        font-size: 18px;
+        content: "centro de educación superior de negocios, innovación y tecnología";
+    }
+
+    .footer__container--title > .logo__container{
+        width: 100px;
+        height: 60px;
+        margin-right: 10px;
+        order:-1;
+    }
+
+    .rrss__container{
+        width: 30%;
+    }
+
+    .footer__bottom{
+        text-align: left;
+    }
+
+    .footer__bottom--list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer__bottom > span{
+        visibility: hidden;
+    }
+
+    .footer__bottom > span:before{
+        visibility: visible;
+        text-transform: none;
+        content: "©2020 Centro de Educación Superior de Negocios, Innovación y Tecnología";
+    }
+}
+
+/* Desktop*/
+@media all and (min-width:1200px){
+
+    /* .header__container{
+
+    } */
+
+    .top__main--list{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;  
+    }
+
+    .second__container{
+        background-color: #d8eeff;
+    }
+
+    .second__container--title > h4{
+        display: block;
+    }
+
+    .second__main{
+        display: block;
+    }
+
+    .second__main--list{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu__container--icon{
+        display: none;
+    }
+
+    .info__container{
+        margin-top: 150px;
+    }
+
+    .info__container--course{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .course--list{
+        width: 40%;
+    }
+
+    .university__container{
+        width: 40%;
+        padding: 30px 20px;
+    }
+
+    .footer__container--title > .logo__container > img{
+        height: 50px;
+    }
+
+    .footer__container > p{
+        width: 50%;
+    }
+
+    .university__container--footer{
+        width: 50%;
+    }
+
+    .footer__bottom{
+        flex-direction: row;
+    }
+
+    .footer__bottom > span{
+        width: 50%;
+    }
+
+    .footer__bottom--list{
+        width: 50%;
+    }
+
+}
